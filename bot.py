@@ -11,8 +11,8 @@ logging.basicConfig(
 log = logging.getLogger(__name__)
 
 # vars
-apiid = 6
-apihash = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
+apiid = 4229463
+apihash = "5954525f084ec8627728ddb5640e2b40"
 BOT_TOKEN = config("BOT_TOKEN", default=None)
 
 log.info("Starting Bot...")
@@ -111,7 +111,7 @@ async def deleter_(event):
             return
     except:
         return
-    sentence = event.raw_text
+    sentence = "Hello"
     sender = await bot.get_entity(event.sender_id)
     word, detected = detector(sentence)
     if detected:
